@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { WinebottlesListComponent } from './winebottles-list/winebottles-list.component';
 import { MaterialmoduleTestComponent } from './materialmodule-test/materialmodule-test.component';
+import { AddNewComponent } from './add-new/add-new.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'material-test',
     component: MaterialmoduleTestComponent
+  },
+  {
+    path: 'add-new',
+    component: AddNewComponent
   }
 ];
 
