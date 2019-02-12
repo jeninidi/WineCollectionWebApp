@@ -1,27 +1,27 @@
 # WineCollectionWebApp
+  First of all, I would like to thank you for the opportunity to apply for internship at Impact and implement my ideas about solving this code chalange!
+  In the sections below I will provide a guide on how to set up the environment for this project, which tools I used and the challanges I met during the development process!
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
+## Prerequisites 
+  node v10.15.1
+  npm v6.4.1
 
-## Development server
+## Running the project
+  Clone the project and navigate to corresponding folder
+  Run 'npm install' to install node packages
+  Run 'npm start' to start the server
+  Open browser on localhost:4200
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Development tools
+  This project is created using the Angular2/4 framework, where I used controllers to create the views, and inside each component you can find the corresponding stylesheet and script.
+  My UI design framework of choice is Angular Material, due to the fact that it consits of many interesting to implement features, allows freedom of creativity and is specifically developed to be used with Angular framework.
+  The application is developed in Microsoft Visual Studio Code IDE and the version control is implemented using Git SCM on GitHub
 
-## Code scaffolding
+## Encountered challanges
+  During the development of this project I experienced a number of chalanges, mostly related to fixing errors and regression testing. 
+  I also had some troubles properly setting the Angular Material framework due to the nummerous package imports, declarations and exports it requires. As the package imports are available online for free use, I did not fully write the MaterialModule by myself, however I had to properly add the declarations and the exports of the packages needed for my project.
+  For a while I couldn't settle on how exactly I wanted the design of my application to look like, so I experimented with various methods of implementation - in my code I have a test file where I kept parts of the unused code, as a future reference to my upcoming projects
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Further reference
+Looking forward to hearing from you soon again and exited for our next interview!
+Zheni Dimitrova
