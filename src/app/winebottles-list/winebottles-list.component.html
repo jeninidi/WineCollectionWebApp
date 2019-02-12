@@ -11,87 +11,343 @@
 
 <div class="wrapper">
     <div class="container">
-        <mat-list>
-            <!-- <mat-list-item *ngFor='let wines of WineCollection'>
-                {{wine.name}}
-            </mat-list-item>
-            <mat-divider></mat-divider> -->
-            <mat-list-item>BILLECART-SALMON BRUT RESERVE NV
-                    <button (click)="toggle()" id="bt">
-                            {{buttonName}}
-                          </button>
-                          
-                          <ng-container *ngIf="show">
-                            <div style="margin: 0 auto;text-align: left;">
-                                <div>
-                                    <label>Name:</label>
-                                    <div><input id="tbname" name="yourname" /></div>
-                                </div>
-                                <div>
-                                    <label>Email Address:</label>
-                                    <div><input name="email" id="email" /></div></div>
-                                <div>
-                                    <label>Additional Information (optional):</label>
-                                    <div><textarea rows="5" cols="46"></textarea></div>
-                                </div>
-                            </div>
-                          </ng-container>
-            </mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>HERMANN J. WIEMER HJW VINEYARD RIESLING</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>VIÑA VIK MILLAHUE</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>KIR-YIANNI ESTATE RAMNISTA</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>TABLAS CREEK VINEYARD ESPRIT DE TABLAS BLANC </mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>DELAMOTTE BLANC DE BLANCS BRUT</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>DAMILANO BAROLO LECINQUEVIGNE</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>MATTHIASSON CABERNET SAUVIGNON</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>CLOS MOGADOR PRIORAT</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>CHARLES HEIDSIECK VINTAGE BRUT</mat-list-item>
-            <mat-divider></mat-divider>
-        </mat-list>
+<!-------------------------------------------------->
+<mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                BILLECART-SALMON BRUT RESERVE NV
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="details">
+            <label> An accessible, crowd-pleasing Champagne, the 
+                <br>Billecart-Salmon Brut Reserve has great acidity and a nice 
+                <br>mix of fruit and bread notes. This wine blows better-known 
+                <br>non-vintage sparklers out of the water.
+                <br>
+                <br>
+                <label>Year : 2010</label>
+                <br>
+                <br>
+                <label>Price : 30$</label> 
+                <br>
+            </label> 
+            <img src="https://static.vinepair.com/wp-content/uploads/2018/11/Wine18.png">
+        </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false">
+    </mat-expansion-panel>
+</mat-accordion>
+<!-------------------------------------------------->
+<mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                MAYACAMAS VINEYARDS CABERNET SAUVIGNON 
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="details">
+            <label> Mayacamas Vineyards’ 2014 Cabernet Sauvignon is a graceful 
+                <br>return to form from an iconic Napa winery. Changes in ownership,  
+                <br>civil disputes, and worries about a departure from the winery’s 
+                <br>traditional, elegant style become distant memories when tasting
+                <br>this powerful but focused wine. Very light oak influence allows
+                <br>the elevated, sun-soaked terroir of Mount Veeder to shine.
+                <br>
+                <br>
+                <label>Year : 2014</label>
+                <br>
+                <br>
+                <label>Price : 55$</label> 
+                <br>
+            </label> 
+            <img src="https://static.vinepair.com/wp-content/uploads/2018/11/Wine1.png">
+        </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false">
+    </mat-expansion-panel>
+</mat-accordion>
+<!-------------------------------------------------->
+<mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                HERMANN J. WIEMER HJW VINEYARD RIESLING
+            </mat-panel-title>
+             
+            
+        </mat-expansion-panel-header>
+        <div class="details">
+            <label> German-born Hermann J. Wiemer was a pioneer of viticulture and 
+                <br>winemaking in New York’s Finger Lakes region. In 2003, his apprentice 
+                <br>Fred Merwath took over the winery, along with Merwath’s college friend 
+                <br>and now co-owner, Oskar Bynke. The pair are now making the region’s most 
+                <br>exciting wines, growing grapes without pesticides and herbicides, and 
+                <br>slowly fermenting wines over periods of eight months or more. 
+                <br>
+                <br>
+                <label>Year : 2016</label>
+                <br>
+                <br>
+                <label>Price : 20$</label> 
+                <br>
+            </label> 
+            <img src="https://static.vinepair.com/wp-content/uploads/2018/11/Wine2.png">
+        </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false">
+    </mat-expansion-panel>
+</mat-accordion>
+<!-------------------------------------------------->
+<mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                VIÑA VIK MILLAHUE
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="details">
+            <label> Norwegian billionaire Alexander Vik founded an eponymous Chilean winery 
+                <br>with the modest aim of creating the best wine in South America. In 2006, 
+                <br>after years of extensive planning, research, and soil analysis, he purchased 
+                <br>an 11,000-acre estate in the Millahue Valley. Viña Vik’s flagship Millahue 
+                <br>blend contains Cabernet Sauvignon grapes from three different vine clones, 
+                <br>planted across three plots. 
+                <br>
+                <br>
+                <label>Year : 2013</label>
+                <br>
+                <br>
+                <label>Price : 55$</label> 
+                <br>
+            </label> 
+            <img src="https://static.vinepair.com/wp-content/uploads/2018/11/Wine3.png">
+        </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false">
+    </mat-expansion-panel>
+</mat-accordion>
+<!-------------------------------------------------->
+<mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                KIR-YIANNI ESTATE RAMNISTA
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="details">
+            <label> An acidic, black grape, Xinomavro wines are powerful and highly tannic. 
+                <br>Grapes for Kir-Yianni Estate’s Ramnista come from carefully selected 
+                <br>vineyards whose low pH soils produce expressive, concentrated wines. 
+                <br>The 2013 vintage is intensely aromatic, with flavors of dark fruit, 
+                <br>leather, olives, and herbs. Grippy tannins work alongside racy acidity 
+                <br>in this $25 bottle that will age well for 10 to 15 years at least.
+                <br>
+                <br>
+                <label>Year : 2013</label>
+                <br>
+                <br>
+                <label>Price : 25$</label> 
+                <br>
+            </label> 
+            <img src="https://static.vinepair.com/wp-content/uploads/2018/11/Wine4.png">
+        </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false">
+    </mat-expansion-panel>
+</mat-accordion>
+<!-------------------------------------------------->
+<mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                TABLAS CREEK VINEYARD ESPRIT DE TABLAS BLANC 
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="details">
+            <label>An esteemed Paso Robles winery, Tablas Creek Vineyard was 
+                <br>formed as a joint venture between the southern Rhône’s 
+                <br>Perrin family (of Château de Beaucastel fame), and Robert 
+                <br>Haas, the founder of wine importer Vineyard Brands. The plot 
+                <br>features original vine cuttings from France, with Roussanne, 
+                <br>Grenache Blanc, and Picpoul Blanc making up the 2015 Esprit 
+                <br>de Tablas Blanc blend. 
+                <br>
+                <br>
+                <label>Year : 2015</label>
+                <br>
+                <br>
+                <label>Price : 43$</label> 
+                <br>
+            </label> 
+            <img src="https://static.vinepair.com/wp-content/uploads/2018/11/Wine5.png" >
+        </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false">
+    </mat-expansion-panel>
+</mat-accordion>
+<!-------------------------------------------------->
+<mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                DELAMOTTE BLANC DE BLANCS BRUT
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="details">
+            <label> Priced at just $90, little more than many houses’ non-vintage offerings, 
+                <br>this creamy, complex blanc de blancs offers bright, fruit-driven flavor. 
+                <br>There are well-incorporated, toasty brioche notes, balanced by mouthwatering 
+                <br>acidity. Complex yet approachable, this is a crowd-pleasing vintage Champagne, 
+                <br>priced for the people.
+                <br>
+                <br>
+                <label>Year : 2008</label>
+                <br>
+                <br>
+                <label>Price : 90$</label> 
+                <br>
+            </label> 
+            <img src="https://static.vinepair.com/wp-content/uploads/2018/11/Wine6.png">
+        </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false">
+    </mat-expansion-panel>
+</mat-accordion>
+<!-------------------------------------------------->
+<mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                DAMILANO BAROLO LECINQUEVIGNE
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="details">
+            <label> An affordable Barolo from one of the most celebrated producers 
+                <br>in the region (many of Damilano’s single-vineyard bottles have 
+                <br>three-figure price tags) this wine is a blend of grapes from five 
+                <br>of the winery’s vineyards. It has a beautiful ruby color and 
+                <br>quintessential Barolo aromas of roses plus a hint of leather and 
+                <br>mushrooms. Rusted iron and savory, herbal spices come through on 
+                <br>the palate, and it finishes with punchy tannins.
+                <br>
+                <br>
+                <label>Year : 2013</label>
+                <br>
+                <br>
+                <label>Price : 43$</label> 
+                <br>
+            </label> 
+            <img src="https://static.vinepair.com/wp-content/uploads/2018/11/Wine8.png">
+        </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false">
+    </mat-expansion-panel>
+</mat-accordion>
+<!-------------------------------------------------->
+<mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                FLÂNEUR LA BELLE PROMENADE CHARDONNAY 
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="details">
+            <label> A single-vineyard bottling made with organically-farmed grapes, 
+                <br>Flâneur La Belle Promenade is a luxurious Oregon Chardonnay. 
+                <br>Careful oak integration combines with crisp, refreshing grapes 
+                <br>to provide a bottle akin to liquid honeysuckle with a savory saline 
+                <br>finish. Get your hands on this small-production wine before it sells out.
+                <br>
+                <br>
+                <label>Year : 2016</label>
+                <br>
+                <br>
+                <label>Price : 50$</label> 
+                <br>
+            </label> 
+            <img src="https://static.vinepair.com/wp-content/uploads/2018/11/Wine11.png">
+        </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false">
+    </mat-expansion-panel>
+</mat-accordion>
+<!-------------------------------------------------->
+<mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                MATTHIASSON CABERNET SAUVIGNON 
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="details">
+            <label> This is one for all the wine geeks out there. Matthiasson’s 
+                <br>2015 Cabernet Sauvignon is proof that Napa can make low-alcohol, 
+                <br>old-world style Cabernets that are still age-worthy. The wine’s 
+                <br>nose is abundant with brambly red and black fruits, and hints of 
+                <br>minerals and herbs. Its fresh, vibrant body includes light tannins 
+                <br>and refreshing acidity.
+                <br>
+                <br>
+                <label>Year : 2015</label>
+                <br>
+                <br>
+                <label>Price : 72$</label> 
+                <br>
+            </label> 
+            <img src="https://static.vinepair.com/wp-content/uploads/2018/11/Wine12.png">
+        </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false">
+    </mat-expansion-panel>
+</mat-accordion>
+<!-------------------------------------------------->
+<mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                CLOS MOGADOR PRIORAT
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        
+        <div class="details">
+            <label> Founded in 1979, Clos Mogador is one of Priorat’s top producers. 
+                <br>Founded in 1979, Clos Mogador is one of Priorat’s top producers. 
+                <br>Made by René Barbier Meyer, son of the winery’s founder, the 2015 
+                <br>is an incredible, standout wine. Dense and rich, with vibrant acidity 
+                <br>that belies its 15 percent alcohol, the wine is balanced, precise, and 
+                <br>ideal for special occasions.
+                <br>
+                <br>
+                <label>Year : 2015</label>
+                <br>
+                <br>
+                <label>Price : 100$</label> 
+                <br>
+            </label> 
+            <img src="https://static.vinepair.com/wp-content/uploads/2018/11/Wine14.png">
+        </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false">
+    </mat-expansion-panel>
+</mat-accordion>
+<!-------------------------------------------------->
+
     </div>
 </div>
 
-<mat-accordion>
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              Personal data
-            </mat-panel-title>
-            <mat-panel-description>
-              Type your name and age
-            </mat-panel-description>
-          </mat-expansion-panel-header>
-      
-          <mat-form-field>
-            <input matInput placeholder="First name">
-          </mat-form-field>
-      
-          <mat-form-field>
-            <input matInput placeholder="Age">
-          </mat-form-field>
-        </mat-expansion-panel>
-        <mat-expansion-panel (opened)="panelOpenState = true"
-                             (closed)="panelOpenState = false">
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              Self aware panel
-            </mat-panel-title>
-            <mat-panel-description>
-              Currently I am {{panelOpenState ? 'open' : 'closed'}}
-            </mat-panel-description>
-          </mat-expansion-panel-header>
-          <p>I'm visible because I am open</p>
-        </mat-expansion-panel>
-      </mat-accordion>
+
 
 
 
@@ -181,6 +437,51 @@
 </ng-container> -->
 
 
+<!-- <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      Self aware panel
+                    </mat-panel-title>
+                    <mat-panel-description>
+                      Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                    </mat-panel-description>
+                  </mat-expansion-panel-header> -->
 
 
-  
+      <!-- <mat-list>
+             <mat-list-item *ngFor='let wines of WineCollection'>
+                {{wine.name}}
+            </mat-list-item>
+            <mat-divider></mat-divider> 
+            <mat-list-item>BILLECART-SALMON BRUT RESERVE NV</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>HERMANN J. WIEMER HJW VINEYARD RIESLING</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>VIÑA VIK MILLAHUE</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>KIR-YIANNI ESTATE RAMNISTA</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>TABLAS CREEK VINEYARD ESPRIT DE TABLAS BLANC </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>DELAMOTTE BLANC DE BLANCS BRUT</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>DAMILANO BAROLO LECINQUEVIGNE</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>MATTHIASSON CABERNET SAUVIGNON</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>CLOS MOGADOR PRIORAT</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>CHARLES HEIDSIECK VINTAGE BRUT</mat-list-item>
+            <mat-divider></mat-divider>
+        </mat-list> -->
+
+         <!-- <mat-panel-description>
+                      Type your name and age
+                    </mat-panel-description> -->
+
+    <!-- <mat-form-field>
+                    <input matInput placeholder="First name">
+                  </mat-form-field>
+              
+                  <mat-form-field>
+                    <input matInput placeholder="Age">
+                  </mat-form-field> -->
