@@ -6,34 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./winebottles-list.component.css']
 })
 export class WinebottlesListComponent implements OnInit {
-  panelOpenState = false;
-  public show:boolean = false;
-  public buttonName:any = 'Show';
-  winelist: Wines[];
 
-  constructor() { 
-    this.winelist = [
-      {Id: '1', name: 'Wine1'},
-      {Id: '2', name: 'Wine2'},
-      {Id: '3', name: 'Wine3'},
-    ];
-  }
+panelOpenState = false;
 
-  ngOnInit() {
-  }
-  
-  toggle() {
-    this.show = !this.show;
+constructor() {}
 
-    // CHANGE THE NAME OF THE BUTTON.
-    if(this.show)  
-      this.buttonName = "Hide";
-    else
-      this.buttonName = "Show";
-  }
+ngOnInit() {}
 
-}
-export class Wines{
-  Id: string;
-  name: string;
 }

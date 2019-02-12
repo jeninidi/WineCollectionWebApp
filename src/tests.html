@@ -1,0 +1,148 @@
+<!-- <div class="collectionList">
+  <ol style="width:50px;height:100px;overflow: scroll;">
+    <li>Wine1</li>
+    <li>Wine2</li>
+    <li>Wine2</li>   
+    <li>Wine2</li>
+    <li>Wine2</li>
+    <li>Wine2</li>
+    <li>Wine2</li>
+    <li>Wine2</li>
+    <li>Wine2</li>
+    <li>Wine2</li>   
+  </ol>
+</div> -->
+<!-- <button mat-button [matMenuTriggerFor]="menu">List of all Wines</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    
+    
+    Item 1
+    <button (click)="toggle()" id="bt">
+        {{buttonName}}
+      </button>
+      
+      <ng-container *ngIf="show">
+        <div style="margin: 0 auto;text-align: left;">
+            <div>
+                <label>Name:</label>
+                <div><input id="tbname" name="yourname" /></div>
+            </div>
+            <div>
+                <label>Email Address:</label>
+                <div><input name="email" id="email" /></div></div>
+            <div>
+                <label>Additional Information (optional):</label>
+                <div><textarea rows="5" cols="46"></textarea></div>
+            </div>
+        </div>
+      </ng-container> -->
+
+  <!-- </button> -->
+  <!-- <button mat-menu-item>Item 2</button>
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu> -->
+
+<!-- <button (click)="toggle()" id="bt">
+  {{buttonName}}
+</button>
+
+<ng-container *ngIf="show">
+  <div style="margin: 0 auto;text-align: left;">
+      <div>
+          <label>Name:</label>
+          <div><input id="tbname" name="yourname" /></div>
+      </div>
+      <div>
+          <label>Email Address:</label>
+          <div><input name="email" id="email" /></div></div>
+      <div>
+          <label>Additional Information (optional):</label>
+          <div><textarea rows="5" cols="46"></textarea></div>
+      </div>
+  </div>
+</ng-container> -->
+
+
+<!-- <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      Self aware panel
+                    </mat-panel-title>
+                    <mat-panel-description>
+                      Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                    </mat-panel-description>
+                  </mat-expansion-panel-header> -->
+
+
+      <!-- <mat-list>
+             <mat-list-item *ngFor='let wines of WineCollection'>
+                {{wine.name}}
+            </mat-list-item>
+            <mat-divider></mat-divider> 
+            <mat-list-item>BILLECART-SALMON BRUT RESERVE NV</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>HERMANN J. WIEMER HJW VINEYARD RIESLING</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>VIÑA VIK MILLAHUE</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>KIR-YIANNI ESTATE RAMNISTA</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>TABLAS CREEK VINEYARD ESPRIT DE TABLAS BLANC </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>DELAMOTTE BLANC DE BLANCS BRUT</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>DAMILANO BAROLO LECINQUEVIGNE</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>MATTHIASSON CABERNET SAUVIGNON</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>CLOS MOGADOR PRIORAT</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>CHARLES HEIDSIECK VINTAGE BRUT</mat-list-item>
+            <mat-divider></mat-divider>
+        </mat-list> -->
+
+         <!-- <mat-panel-description>
+                      Type your name and age
+                    </mat-panel-description> -->
+
+    <!-- <mat-form-field>
+                    <input matInput placeholder="First name">
+                  </mat-form-field>
+              
+                  <mat-form-field>
+                    <input matInput placeholder="Age">
+                  </mat-form-field> -->
+
+winelist: Wines[];
+
+public show:boolean = false;
+public buttonName:any = 'Show';
+
+this.winelist = [
+      {Id: '1', name: 'Wine1'},
+      {Id: '2', name: 'Wine2'},
+      {Id: '3', name: 'Wine3'},
+    ];
+
+
+    toggle() {
+        this.show = !this.show;
+    
+        // CHANGE THE NAME OF THE BUTTON.
+        if(this.show)  
+          this.buttonName = "Hide";
+        else
+          this.buttonName = "Show";
+      }
+    
+    }
+    export class Wines{
+      Id: string;
+      name: string;
+    }
+
+
+    
