@@ -1,6 +1,48 @@
-<h1>Add new bottle of wine</h1>
+<h2>
+    <i>Add new bottle of wine!</i>  
+    <div>
+        <img class= 'gif' src='https://imagesvc.timeincapp.com/v3/mm/gif?url=https%3A%2F%2Fcdn-image.foodandwine.com%2Fsites%2Fdefault%2Ffiles%2FHD-201310-a-grower-champagne.gif&w=450&c=sc&poi=face&q=85' alt="New bottle">
+    </div>  
+</h2>
 
-<form action="/action_page.php">
+<div class="wrapper">
+<div class="container">
+    <mat-form-field>
+      <input matInput placeholder="Name of wine">
+    </mat-form-field>
+  <br>
+  <mat-form-field>
+      <input matInput placeholder="Price (USD$)">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <textarea matInput placeholder="Description"></textarea>
+    </mat-form-field>
+  <br>
+    <mat-form-field>
+      <mat-select placeholder="Select production year">
+        <mat-option value="option">2010</mat-option>
+        <mat-option value="option">2011</mat-option>
+        <mat-option value="option">2012</mat-option>
+        <mat-option value="option">2013</mat-option>
+        <mat-option value="option">2014</mat-option>
+        <mat-option value="option">2015</mat-option>
+        <mat-option value="option">2016</mat-option>
+        <mat-option value="option">2017</mat-option>
+        <mat-option value="option">2018</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+    <br>
+    <input class="ng-hide" id="input-file-id" multiple type="file" />
+    <br><br> <br>
+    <button mat-raised-button class="new" routerLink="/collection"><i>Submit</i></button>
+
+  </div>
+</div>
+
+
+<!-- <form action="/action_page.php">
   Name: <input type="text" name="Name" value="Enter wine name here">
   <br> 
   <br>
@@ -20,10 +62,4 @@
   <br>
   <br>
   <input type="submit" value="Submit">
-  </form>
-
-  <mat-list>
-      <mat-list-item> Pepper </mat-list-item>
-      <mat-list-item> Salt </mat-list-item>
-      <mat-list-item> Paprika </mat-list-item>
-     </mat-list>
+  </form> -->

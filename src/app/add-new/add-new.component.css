@@ -1,0 +1,26 @@
+h2{
+    color: #fcdcda;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 48px;
+  }
+  img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    margin-top: 25px;
+  }
+  
+  .wrapper{
+    text-align: center;
+    
+  }
+  
+  .container{
+    display: inline-block;
+    color: #fcdcda;
+    width: 200px;
+  }
+  .ng-hide{
+      padding-left: 15px;
+  }
