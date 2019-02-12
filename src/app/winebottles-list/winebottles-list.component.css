@@ -1,12 +1,14 @@
 mat-divider {
   width: 100%;
 }
+
 mat-list{
   color: #fcdcda;
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 18px;
 }
+
 h2{
   color: #fcdcda;
   text-align: center;

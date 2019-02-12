@@ -1,11 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
+import 'hammerjs';
+import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from "./MaterialModule";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatListModule} from '@angular/material/list';
 import {MatDividerModule} from '@angular/material/divider';
-import 'hammerjs';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatNativeDateModule} from '@angular/material';

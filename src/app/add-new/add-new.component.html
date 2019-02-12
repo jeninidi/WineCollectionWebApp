@@ -1,20 +1,21 @@
+<!-- Banner -->
 <h2>
-    <i>Add new bottle of wine!</i>  
-    <div>
-        <img class= 'gif' src='https://imagesvc.timeincapp.com/v3/mm/gif?url=https%3A%2F%2Fcdn-image.foodandwine.com%2Fsites%2Fdefault%2Ffiles%2FHD-201310-a-grower-champagne.gif&w=450&c=sc&poi=face&q=85' alt="New bottle">
-    </div>  
+  <i>Add new bottle of wine!</i>  
+  <div>
+    <img class= 'gif' src='https://imagesvc.timeincapp.com/v3/mm/gif?url=https%3A%2F%2Fcdn-image.foodandwine.com%2Fsites%2Fdefault%2Ffiles%2FHD-201310-a-grower-champagne.gif&w=450&c=sc&poi=face&q=85' alt="New bottle">
+  </div>  
 </h2>
-
+<!-- Form for inserting information -->
 <div class="wrapper">
-<div class="container">
+  <div class="container">
     <mat-form-field>
       <input matInput placeholder="Name of wine">
     </mat-form-field>
   <br>
-  <mat-form-field>
+    <mat-form-field>
       <input matInput placeholder="Price (USD$)">
     </mat-form-field>
-    <br>
+  <br>
     <mat-form-field>
       <textarea matInput placeholder="Description"></textarea>
     </mat-form-field>
@@ -32,34 +33,15 @@
         <mat-option value="option">2018</mat-option>
       </mat-select>
     </mat-form-field>
-    <br>
-    <br>
+  <br>
+  <br>
     <input class="ng-hide" id="input-file-id" multiple type="file" />
-    <br><br> <br>
-    <button mat-raised-button class="new" routerLink="/collection"><i>Submit</i></button>
+  <br>
+  <br> 
+  <br>
+    <button mat-raised-button class="new" routerLink="/collection">
+      <i>Submit</i>
+    </button>
 
   </div>
 </div>
-
-
-<!-- <form action="/action_page.php">
-  Name: <input type="text" name="Name" value="Enter wine name here">
-  <br> 
-  <br>
-  Description: <input type="text" name="Description" value="Enter description here">
-  <br>
-  <br>
-  Year: <input type="text" name="Year" value="Enter wine year here">
-  <br>
-  <br>
-  Price: <input type="text" name="Price" value="Enter wine price here">
-  <br>
-  <br>
-  <form action="/action_page.php">
-    <label>Add picture here</label>
-    <input type="file" name="picture" accept="image/*">
-  </form>
-  <br>
-  <br>
-  <input type="submit" value="Submit">
-  </form> -->
