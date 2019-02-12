@@ -1,6 +1,7 @@
 # WineCollectionWebApp
 
   First of all, I would like to thank you for the opportunity to apply for internship at Impact and implement my ideas about solving this code chalange!
+  
   In the sections below I will provide a guide on how to set up the environment for this project, which tools I used and the challanges I met during the development process!
 
 ## Prerequisites 
@@ -9,18 +10,19 @@
 	
   npm v6.4.1
 
+
 ## Running the project
 
-  1.Clone the project and navigate to corresponding folder
+  1. Clone the project and navigate to corresponding folder
 	
 	
-  2.Run 'npm install' to install node packages
+  2. Run 'npm install' to install node packages
 	
 	
-  3.Run 'npm start' to start the server
+  3. Run 'npm start' to start the server
 	
 	
-  4.Open browser on localhost:4200
+  4. Open browser on localhost:4200
 	
 
 ## Development tools
